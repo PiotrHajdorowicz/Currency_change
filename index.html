@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <title>Document</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <form class="js-form">
+            <fieldset>
+                <legend>Przelicznik walut</legend>
+            <div class= "firstcurrency"> 
+                <label>Posiadam walutę</label>
+                <select class="form-optionOne"  required>
+                    <option>PLN</option>
+                    <option>EUR</option>
+                    <option>USD</option>
+                  </select>
+            </div>
+            <p class="paragraph">
+                <label>
+                    Kwota: <input name="euro" type="number" value="0" min="0" step="0.01" class="amount" required >
+                </label>
+            </p>
+            <div class="secondcurrency">
+                <label>Chcę zamienić na</label>
+                <select class="form-optionTwo"  required>
+                    <option>EUR</option>
+                    <option>USD</option>
+                    <option>PLN</option>
+                  </select>
+            </div>
+        </fieldset>
+        
+            <p>
+                <button class="przelicz">Wyślij</button>
+            </p>
+
+        </form>
+        <p class="final">Otrzymasz: <span class="result"></span> <span class="endcurrency"></span></p>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+html {
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+*,::after, ::before {
+    box-sizing: inherit;
+
+}
+
+.wrapper {
+    width: 20vw;
+margin: auto;
+margin-top: 30vh;
+
+}
+label {
+    padding-top: 20%;
+}
+fieldset {
+    height: 40vh;
+}
+.firstcurrency {
+    margin-top: 7%;
+}
+.paragraph {
+    margin-top: 9%;
+}
+.secondcurrency {
+    margin-top: 15%;
+}
